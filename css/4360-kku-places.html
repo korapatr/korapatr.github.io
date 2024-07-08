@@ -19,8 +19,9 @@
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             
-            h1 {
-                text-align: center;   
+            #heading {
+                text-align: center;
+                color: rgb(0, 0, 173);   
             }
 
             .image {
@@ -38,14 +39,14 @@
                 padding: 5px;
             }
 
-            #listStyle li:nth-child(odd){
+            .listStyle {
                 border:5px dotted #7C9CAB;      
             }
         </style>
 
         <div id = "content">
 
-            <h1>Hello world!</h1>
+            <h1 id = heading >Hello world!</h1>
 
             <img src="https://gear.kku.ac.th/wp-content/uploads/2022/12/cong-936x469.png" 
             width="70%" height="70%" alt="pic" class = "image"/><br>
@@ -56,10 +57,10 @@
             <p style="color: rgb(0, 0, 173);">Khon Kaen University has many outstanding places</p>
 
             <ul>
-                <div id="listStyle">
-                    <li>ศาลเจ้าพ่อมอดินแดง</li>
+                <div>
+                    <li class="listStyle">ศาลเจ้าพ่อมอดินแดง</li>
                     <li>พิพิธภัณฑ์ธรรมชาติวิทยา มข</li>
-                    <li>อุโมงค์ต้นไม้</li>
+                    <li class="listStyle">อุโมงค์ต้นไม้</li>
                 </div>
             </ul>
 
