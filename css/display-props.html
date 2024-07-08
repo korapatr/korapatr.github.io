@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Korapatr Lertwithayakul 653040436-0</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color:rgb(233, 233, 228);
+            }
+
+            .board {
+                border: 1px solid black;
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .block {
+                display: block;
+                background-color: #FFC2C7;
+                padding: 12px;
+                margin: 5px;
+                border-radius: 10px;
+            }
+
+            .inline {
+                display: inline;
+                background-color: #B6E5D8;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .container-flex {
+                display: flex;
+            }
+
+            .item-flex {
+                color:black;
+                padding: 10px;
+                margin: 3px;
+                border-radius: 10px;
+            }
+
+            .grow-1 {
+                background-color:#8FDDE7;
+                flex-grow: 1;
+            }
+
+            .grow-2 {
+                background-color:#FBE5C8;
+                flex-grow: 2;
+            }
+
+            .container-shrink {
+                display: flex;
+            }
+
+            .item-shrink {
+                color: black;
+                padding: 10px;
+                width: 300px;
+                margin: 3px;
+                border-radius: 10px;
+            }
+
+            .shrink-1 {
+                background-color: #B6E5D8;
+                flex-shrink: 1;
+                
+            }
+
+            .shrink-2 {
+                background-color: #FFC2C7;
+                flex-shrink: 2;
+            }
+        </style>
+
+        <h1 style="text-align: center;">Excercise about Property display</h1>
+        <h3 style="font-weight: bold; font-size: larger">Your most frequently used apps</h3>
+        <div class = "board">
+            <div class = "block">YouTube</div>
+            <div class = "block">WEBTOON</div>
+            <div class = "block">ReadAWrite</div>
+        </div>
+
+        <h3 style="font-weight: bold; font-size: larger">Places you want to visit in Thailand</h3>
+        <div class = "board">
+            <p>
+                <span class="inline">Bankok</span>
+                <span class="inline">Chiang Mai</span>
+                <span class="inline">Phuket</span>
+            </p>
+        </div>
+
+        <h3 style="font-weight: bold; font-size: larger">Countries you want to visit</h3>
+        <div class = "board">
+            <div class = "container-flex">
+                <div class = "item-flex grow-1">Japan</div>
+                <div class = "item-flex grow-1">England</div>
+                <div class = "item-flex grow-2">Canada</div>
+            </div>
+        </div>
+
+        <h3 style="font-weight: bold; font-size: larger">Activities you want to do</h3>
+        <div class = "board">
+            <div class = "container-shrink">
+                <div class = "item-shrink shrink-1">Reading</div>
+                <div class = "item-shrink shrink-1">Sleeping</div>
+                <div class = "item-shrink shrink-2">Eating</div>
+            </div>
+        </div>
+    </body>
+</html>
